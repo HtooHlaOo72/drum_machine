@@ -77,8 +77,7 @@ class DrumMachine extends React.Component{
           
           
         </div>
-        <div id='display' className='rounded bg-dark text-light w-100 py-3 my-3'>{this.state.displayText}</div>
-        {/* <Display dText={this.state.displayText} power={this.state.power}/> */}
+        <Display dText={this.state.displayText} power={this.state.power}/>
         {
           (this.state.type)?
           <div className='row justify-content-center'>
@@ -118,7 +117,7 @@ class DrumMachine extends React.Component{
         </div>
         }
         </div>
-         
+        <div className='fixed-bottom'>Created By Htoo Hla Oo</div>
       </div>
     )
   }
